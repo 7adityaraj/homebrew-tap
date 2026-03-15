@@ -11,7 +11,7 @@ class HelmAppChecker < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_darwin_amd64.tar.gz"
-      sha256 "55f8c9777d3ba478f177d05a6900b7306dd7cdc5fcce11c9d63aad1371d75ba3"
+      sha256 "9a3c4a346bb13c43574b143da38b9bade56355b31ab87bdb710cd669dd7926eb"
 
       define_method(:install) do
         bin.install "helm-app-checker"
@@ -19,7 +19,7 @@ class HelmAppChecker < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_darwin_arm64.tar.gz"
-      sha256 "3d53b475a7807ffd8f34173cc508e1b2598ddcfb26c3765879ede3798b7b9721"
+      sha256 "5da4c69fdbc0630531a7b385b8901aea4a64e9e828532bb0d4aa1a2cb997dd80"
 
       define_method(:install) do
         bin.install "helm-app-checker"
@@ -30,14 +30,14 @@ class HelmAppChecker < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_linux_amd64.tar.gz"
-      sha256 "07027a1c2f373453ecab2df0e6a341cce8ecf6ec9222cba556476190e1ec7048"
+      sha256 "61bf1b7a8d90f85f6619661d5afcd97302690999b31560c73c9fc6c6fd7ea927"
       define_method(:install) do
         bin.install "helm-app-checker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_linux_arm64.tar.gz"
-      sha256 "3e0496b1babe749871b0e05f178e58390731dc967948fb232794575f56409f05"
+      sha256 "7a69e7bf80cc043d808a7928b870413c39a390c349d3d6de4a69c20d1e607abc"
       define_method(:install) do
         bin.install "helm-app-checker"
       end
