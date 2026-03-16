@@ -5,21 +5,21 @@
 class HelmAppChecker < Formula
   desc "Check Helm release versions against latest available from Artifact Hub and GitHub"
   homepage "https://github.com/7adityaraj"
-  version "1.0.0"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_darwin_amd64.tar.gz"
-      sha256 "9a3c4a346bb13c43574b143da38b9bade56355b31ab87bdb710cd669dd7926eb"
+      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.2/helm-app-checker_darwin_amd64.tar.gz"
+      sha256 "18e213dfaca910794df8b4426404da0f3962fd25604a85e2aed57ade8ad358cd"
 
       define_method(:install) do
         bin.install "helm-app-checker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_darwin_arm64.tar.gz"
-      sha256 "5da4c69fdbc0630531a7b385b8901aea4a64e9e828532bb0d4aa1a2cb997dd80"
+      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.2/helm-app-checker_darwin_arm64.tar.gz"
+      sha256 "a7dfc5ad90087bc866158013e5df451007361302b6fdf425f9b1fc52d6169ca8"
 
       define_method(:install) do
         bin.install "helm-app-checker"
@@ -29,15 +29,15 @@ class HelmAppChecker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_linux_amd64.tar.gz"
-      sha256 "61bf1b7a8d90f85f6619661d5afcd97302690999b31560c73c9fc6c6fd7ea927"
+      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.2/helm-app-checker_linux_amd64.tar.gz"
+      sha256 "1a861ae9204a74932a9781a2223337dc07c94eebb4cd5b6d95050a2b87ded88a"
       define_method(:install) do
         bin.install "helm-app-checker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.0/helm-app-checker_linux_arm64.tar.gz"
-      sha256 "7a69e7bf80cc043d808a7928b870413c39a390c349d3d6de4a69c20d1e607abc"
+      url "https://github.com/7adityaraj/homebrew-tap/releases/download/v1.0.2/helm-app-checker_linux_arm64.tar.gz"
+      sha256 "9b0c488eb2851366e070bc709f786a48293e7dc1bc263e1465fdc400123d9703"
       define_method(:install) do
         bin.install "helm-app-checker"
       end
